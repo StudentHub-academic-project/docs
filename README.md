@@ -1,23 +1,54 @@
-# Nextra Docs Template 
+[![Node.js CI](https://github.com/StudentHub-academic-project/student-hub-design-docs/actions/workflows/build.yml/badge.svg)](https://github.com/StudentHub-academic-project/student-hub-design-docs/actions/workflows/node.js.yml)
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
-This is a template for creating documentation with [Nextra](https://nextra.site).
+# student-hub design document
 
-[**Live Demo →**](https://nextra-docs-template.vercel.app)
+## About
+This website provides design document for student-hub, an academic project.
 
-[![](.github/screenshot.png)](https://nextra-docs-template.vercel.app)
+## Getting started
 
-## Quick Start
+### Prerequisites
 
-Click the button to clone this repository and deploy it on Vercel:
+* yarn `npm i -g yarn` or `corepack enable`
 
-[![](https://vercel.com/button)](https://vercel.com/new/clone?s=https%3A%2F%2Fgithub.com%2Fshuding%2Fnextra-docs-template&showOptionalTeamCreation=false)
+> [!IMPORTANT]
+> **Node.js 18.x+** version must be installed in your OS.
 
-## Local Development
+### Deploy localy
 
-First, run `pnpm i` to install the dependencies.
+1. Clone the repository
 
-Then, run `pnpm dev` to start the development server and visit localhost:3000.
+```shell
+$ git clone https://github.com/StudentHub-academic-project/student-hub-design-docs
+```
+
+2. Install dependencies
+
+```shell
+$ yarn install
+```
+
+3. Start the local server
+
+  * Development
+    ```shell
+    $ yarn dev
+    ```
+
+  * Production
+    ```shell
+    $ yarn build
+    $ yarn start
+    ```
+
+## Authors
+
+* [@stbestichhh](https://github.com/stbestichhh)
+* [@Cake2Rock](https://github.com/Cake2Rock)
+* [@anastasia-sl](https://github.com/anastasia-sl)
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE)
