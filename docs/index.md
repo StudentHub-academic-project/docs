@@ -87,3 +87,21 @@ will be created.
 Creates data for request and transforms to JSON format, then sends request with data and authorization 
 token in auth header. Then this request calls bussiness logic on the server and gets response with 
 message or data in json or array format.
+
+**Example**:
+* Req:
+  * Body:
+    ```json
+    {
+      "username": "IamUser",
+      "fullname": "Iam User",
+      "email": "user@user.com",
+      "password": "strongespassword12345"
+    }
+    ```
+* Response:
+  ```json
+  {
+    "message": "User created."
+  }
+  ```
