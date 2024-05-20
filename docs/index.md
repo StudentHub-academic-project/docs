@@ -10,7 +10,7 @@ StudentHub is developed by team:
 
 ## Goals and non-goals
 ### Goals
-* Develop a service, where students from the specific university will share with
+* Develop a service, where students will share with
 academic materials, such as lectures, presentations, videos, audios and othe files.
 * Main page with random academic materials.
 * Publish posts and academic materials.
@@ -30,12 +30,12 @@ will have access.
 
 ## Subsystems
 ### Components:
-* Server - backend component based on Node.js using express.js framework and written on TypeScript. 
+* Server - backend component based on [Node.js](https://nodejs.org/en) using [express.js](https://expressjs.com/) framework and written on TypeScript. 
 Provides RESTful API and sends responses to the client.
-* Client - frontend component also based on Node.js using React.js framework. Sends requests
+* Client - frontend component also based on [Node.js](https://nodejs.org/en) using [React.js](https://react.dev/) framework. Sends requests
 to the server and gets responses from it with data.
 * Database - local sqlite database where will be stored all user data. Their posts and materials
-will be stored in local storage under their folder on the server.
+will be stored in local storage under their folder on the server. Will be realized with [sqlite3](https://www.npmjs.com/package/sqlite3) and [Sequelize.js](https://www.npmjs.com/package/sequelize) ORM.
 
 ![StudentHub architecture diagram](./media/architecture-diagram.png)
 
