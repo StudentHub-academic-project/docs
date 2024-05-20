@@ -233,7 +233,7 @@ Body:
 
 ```json
 {
-  "rating": 100
+  "rating": 5
 }
 ```
 
@@ -246,7 +246,7 @@ Response:
         "userId": "7c5f07dd-be3e-443d-9bee-709401150caf",
         "title": "new post title",
         "content": "It is an updated content of my first post",
-        "rating": 100,
+        "rating": 5,
         "updatedAt": "2024-05-20T09:51:35.979Z",
         "createdAt": "2024-05-20T09:51:35.979Z"
     }
