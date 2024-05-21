@@ -41,16 +41,65 @@ Auth: `Bearer Token`
 Response:
 ```json
 {
-    "user": {
-        "id": 1,
-        "uuid": "7c5f07dd-be3e-443d-9bee-709401150caf",
-        "username": "username",
-        "fullname": "Full Name",
-        "email": "email@email.com",
-        "password": "$argon2id$v=19$m=65536,t=10,p=4$fkhoQ0z6kJfH+uZAMq1lkg$p/bGqyQW1/kGsDHhSJwWQp5uFGjty5eUwVKeFIJbbcw",
-        "createdAt": "2024-05-10T14:23:43.991Z",
-        "updatedAt": "2024-05-18T21:53:32.070Z"
+  "user": {
+    "id": 1,
+    "uuid": "7c5f07dd-be3e-443d-9bee-709401150caf",
+    "username": "new uesrname",
+    "fullname": "New FullName",
+    "email": "email@email.com",
+    "password": "$argon2id$v=19$m=65536,t=10,p=4$fkhoQ0z6kJfH+uZAMq1lkg$p/bGqyQW1/kGsDHhSJwWQp5uFGjty5eUwVKeFIJbbcw",
+    "createdAt": "2024-05-10T14:23:43.991Z",
+    "updatedAt": "2024-05-20T09:48:53.227Z"
+  },
+  "posts": [
+    {
+      "id": 1,
+      "uuid": "b292bbfb-4ee9-4a5f-b31e-3f0f2fcec3d9",
+      "title": "first post",
+      "content": "this is content of the my first post in student hub",
+      "userId": "7c5f07dd-be3e-443d-9bee-709401150caf",
+      "rating": 0,
+      "votes": null,
+      "createdAt": "2024-05-19T16:24:00.822Z",
+      "updatedAt": "2024-05-19T16:24:00.822Z"
+    },
+    {
+      "id": 2,
+      "uuid": "acd52d63-cecb-46d0-886c-fe4962b17654",
+      "title": "first post",
+      "content": "this is content of the my first post in student hub",
+      "userId": "7c5f07dd-be3e-443d-9bee-709401150caf",
+      "rating": 0,
+      "votes": null,
+      "createdAt": "2024-05-19T16:27:07.018Z",
+      "updatedAt": "2024-05-19T16:27:07.018Z"
+    },
+    {
+      "id": 3,
+      "uuid": "33c94a0a-bb56-45e2-9895-561a43347d4a",
+      "title": "First post",
+      "content": "It is a content of my first post",
+      "userId": "7c5f07dd-be3e-443d-9bee-709401150caf",
+      "rating": 0,
+      "votes": null,
+      "createdAt": "2024-05-20T09:51:35.979Z",
+      "updatedAt": "2024-05-20T09:51:35.979Z"
+    },
+    {
+      "id": 4,
+      "uuid": "70be3a15-ebdb-4639-8bf0-a5229a6bda8f",
+      "title": "it is an title",
+      "content": "It is a content of my first post",
+      "userId": "7c5f07dd-be3e-443d-9bee-709401150caf",
+      "rating": 0,
+      "votes": null,
+      "createdAt": "2024-05-21T14:05:43.283Z",
+      "updatedAt": "2024-05-21T14:05:43.283Z"
     }
+  ],
+  "materials": [
+    "my_tokens.txt"
+  ]
 }
 ```
 
@@ -62,15 +111,133 @@ Response:
 ```json
 {
   "user": {
-    "id": 2,
-    "uuid": "4bd3fdcb-221f-482f-bf09-d81cfc9dbc38",
-    "username": "username1",
-    "fullname": "Full Name",
-    "email": "email1@email.com",
-    "password": "$argon2id$v=19$m=65536,t=10,p=4$wqu2W8YBE2PBu1rNicn8Ew$H94hfq6gqlNSAMp+PQ6QzaBw9IDVRm7J7+zGvl7Y/MA",
-    "createdAt": "2024-05-19T14:49:31.193Z",
-    "updatedAt": "2024-05-19T14:49:31.193Z"
-  }
+    "id": 1,
+    "uuid": "7c5f07dd-be3e-443d-9bee-709401150caf",
+    "username": "new uesrname",
+    "fullname": "New FullName",
+    "email": "email@email.com",
+    "password": "$argon2id$v=19$m=65536,t=10,p=4$fkhoQ0z6kJfH+uZAMq1lkg$p/bGqyQW1/kGsDHhSJwWQp5uFGjty5eUwVKeFIJbbcw",
+    "createdAt": "2024-05-10T14:23:43.991Z",
+    "updatedAt": "2024-05-20T09:48:53.227Z"
+  },
+  "posts": [
+    {
+      "id": 1,
+      "uuid": "b292bbfb-4ee9-4a5f-b31e-3f0f2fcec3d9",
+      "title": "first post",
+      "content": "this is content of the my first post in student hub",
+      "userId": "7c5f07dd-be3e-443d-9bee-709401150caf",
+      "rating": 0,
+      "votes": null,
+      "createdAt": "2024-05-19T16:24:00.822Z",
+      "updatedAt": "2024-05-19T16:24:00.822Z"
+    },
+    {
+      "id": 2,
+      "uuid": "acd52d63-cecb-46d0-886c-fe4962b17654",
+      "title": "first post",
+      "content": "this is content of the my first post in student hub",
+      "userId": "7c5f07dd-be3e-443d-9bee-709401150caf",
+      "rating": 0,
+      "votes": null,
+      "createdAt": "2024-05-19T16:27:07.018Z",
+      "updatedAt": "2024-05-19T16:27:07.018Z"
+    },
+    {
+      "id": 3,
+      "uuid": "33c94a0a-bb56-45e2-9895-561a43347d4a",
+      "title": "First post",
+      "content": "It is a content of my first post",
+      "userId": "7c5f07dd-be3e-443d-9bee-709401150caf",
+      "rating": 0,
+      "votes": null,
+      "createdAt": "2024-05-20T09:51:35.979Z",
+      "updatedAt": "2024-05-20T09:51:35.979Z"
+    },
+    {
+      "id": 4,
+      "uuid": "70be3a15-ebdb-4639-8bf0-a5229a6bda8f",
+      "title": "it is an title",
+      "content": "It is a content of my first post",
+      "userId": "7c5f07dd-be3e-443d-9bee-709401150caf",
+      "rating": 0,
+      "votes": null,
+      "createdAt": "2024-05-21T14:05:43.283Z",
+      "updatedAt": "2024-05-21T14:05:43.283Z"
+    }
+  ],
+  "materials": [
+    "my_tokens.txt"
+  ]
+}
+```
+
+`GET http://HOST:PORT/user/id/{user_id}` - return profile of the user by it's uuid
+
+Auth: `Bearer Token`
+
+Response:
+```json
+{
+  "user": {
+    "id": 1,
+    "uuid": "7c5f07dd-be3e-443d-9bee-709401150caf",
+    "username": "new uesrname",
+    "fullname": "New FullName",
+    "email": "email@email.com",
+    "password": "$argon2id$v=19$m=65536,t=10,p=4$fkhoQ0z6kJfH+uZAMq1lkg$p/bGqyQW1/kGsDHhSJwWQp5uFGjty5eUwVKeFIJbbcw",
+    "createdAt": "2024-05-10T14:23:43.991Z",
+    "updatedAt": "2024-05-20T09:48:53.227Z"
+  },
+  "posts": [
+    {
+      "id": 1,
+      "uuid": "b292bbfb-4ee9-4a5f-b31e-3f0f2fcec3d9",
+      "title": "first post",
+      "content": "this is content of the my first post in student hub",
+      "userId": "7c5f07dd-be3e-443d-9bee-709401150caf",
+      "rating": 0,
+      "votes": null,
+      "createdAt": "2024-05-19T16:24:00.822Z",
+      "updatedAt": "2024-05-19T16:24:00.822Z"
+    },
+    {
+      "id": 2,
+      "uuid": "acd52d63-cecb-46d0-886c-fe4962b17654",
+      "title": "first post",
+      "content": "this is content of the my first post in student hub",
+      "userId": "7c5f07dd-be3e-443d-9bee-709401150caf",
+      "rating": 0,
+      "votes": null,
+      "createdAt": "2024-05-19T16:27:07.018Z",
+      "updatedAt": "2024-05-19T16:27:07.018Z"
+    },
+    {
+      "id": 3,
+      "uuid": "33c94a0a-bb56-45e2-9895-561a43347d4a",
+      "title": "First post",
+      "content": "It is a content of my first post",
+      "userId": "7c5f07dd-be3e-443d-9bee-709401150caf",
+      "rating": 0,
+      "votes": null,
+      "createdAt": "2024-05-20T09:51:35.979Z",
+      "updatedAt": "2024-05-20T09:51:35.979Z"
+    },
+    {
+      "id": 4,
+      "uuid": "70be3a15-ebdb-4639-8bf0-a5229a6bda8f",
+      "title": "it is an title",
+      "content": "It is a content of my first post",
+      "userId": "7c5f07dd-be3e-443d-9bee-709401150caf",
+      "rating": 0,
+      "votes": null,
+      "createdAt": "2024-05-21T14:05:43.283Z",
+      "updatedAt": "2024-05-21T14:05:43.283Z"
+    }
+  ],
+  "materials": [
+    "my_tokens.txt"
+  ]
 }
 ```
 
@@ -89,6 +256,7 @@ Body:
 Response:
 ```json
 {
+  "user": {
     "id": 1,
     "uuid": "7c5f07dd-be3e-443d-9bee-709401150caf",
     "username": "new uesrname",
@@ -97,6 +265,56 @@ Response:
     "password": "$argon2id$v=19$m=65536,t=10,p=4$fkhoQ0z6kJfH+uZAMq1lkg$p/bGqyQW1/kGsDHhSJwWQp5uFGjty5eUwVKeFIJbbcw",
     "createdAt": "2024-05-10T14:23:43.991Z",
     "updatedAt": "2024-05-20T09:48:53.227Z"
+  },
+  "posts": [
+    {
+      "id": 1,
+      "uuid": "b292bbfb-4ee9-4a5f-b31e-3f0f2fcec3d9",
+      "title": "first post",
+      "content": "this is content of the my first post in student hub",
+      "userId": "7c5f07dd-be3e-443d-9bee-709401150caf",
+      "rating": 0,
+      "votes": null,
+      "createdAt": "2024-05-19T16:24:00.822Z",
+      "updatedAt": "2024-05-19T16:24:00.822Z"
+    },
+    {
+      "id": 2,
+      "uuid": "acd52d63-cecb-46d0-886c-fe4962b17654",
+      "title": "first post",
+      "content": "this is content of the my first post in student hub",
+      "userId": "7c5f07dd-be3e-443d-9bee-709401150caf",
+      "rating": 0,
+      "votes": null,
+      "createdAt": "2024-05-19T16:27:07.018Z",
+      "updatedAt": "2024-05-19T16:27:07.018Z"
+    },
+    {
+      "id": 3,
+      "uuid": "33c94a0a-bb56-45e2-9895-561a43347d4a",
+      "title": "First post",
+      "content": "It is a content of my first post",
+      "userId": "7c5f07dd-be3e-443d-9bee-709401150caf",
+      "rating": 0,
+      "votes": null,
+      "createdAt": "2024-05-20T09:51:35.979Z",
+      "updatedAt": "2024-05-20T09:51:35.979Z"
+    },
+    {
+      "id": 4,
+      "uuid": "70be3a15-ebdb-4639-8bf0-a5229a6bda8f",
+      "title": "it is an title",
+      "content": "It is a content of my first post",
+      "userId": "7c5f07dd-be3e-443d-9bee-709401150caf",
+      "rating": 0,
+      "votes": null,
+      "createdAt": "2024-05-21T14:05:43.283Z",
+      "updatedAt": "2024-05-21T14:05:43.283Z"
+    }
+  ],
+  "materials": [
+    "my_tokens.txt"
+  ]
 }
 ```
 
@@ -261,6 +479,31 @@ Response:
 
 ```json
 {
-  "message": "Post has been deleted".
+  "message": "Post has been deleted"
 }
 ```
+
+## Materials
+
+`GET http://HOST:PORT/materials/:filename` - downloads material
+
+Auth: `Bearer Token`
+
+`GET http://HOST:PORT/materials/` - get all materials
+
+Auth: `Bearer Token`
+
+`POST http://HOST:PORT/materials/` - upload materials to the server
+
+Auth: `Bearer Token`
+
+Body:
+```json
+form-data: {
+  Type: file
+}
+```
+
+`DELETE http://HOST:PORT/materials/:filename` - delete material from the server
+
+Auth: `Bearer Token`
